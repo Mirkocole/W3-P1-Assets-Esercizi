@@ -1,0 +1,95 @@
+#avatar{
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+    padding: 0%;
+}
+
+span.position-absolute.top-0{
+    top: 20%!important;
+    right: 10%!important;
+    background-color: #7550fe!important;
+}
+
+#hero{
+    background-color: #7550fe;
+}
+
+#hero-img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.icon-sub-hero{
+    background-color: #ffeeda;
+    color: #c68d4f;
+}
+
+/* .card{
+    width: 100%;
+    min-width: 200px;
+    margin: 0 30px!important;
+} */
+
+.arrow{
+    max-width: 50px;
+    min-width: 20px;
+    width: 100%;
+}
+
+/* .card{
+    max-width: 300px;
+    min-width: 180px;
+    width: 100%;
+} */
+
+.icon-signal{
+    font-size: 9px;
+    color: #7550fe;
+}
+
+.icon-star{
+    font-size: 13px;
+    color: orange;
+}
+
+.text-feedback{
+    font-size: 16px;
+}
+
+
+/*  Codice Carosello */
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b68de36aab.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <title>Mockup WebSite</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg align-items-center">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Browse
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Landings
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Accounts
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex me-2" role="search">
+                    <div class="col-auto bg-light rounded-circle p-0 d-flex align-items-center">
+                        <i class="fa-regular fa-bell fa-lg bg-light p-3 rounded-circle position-relative">
+                            <span class="position-absolute top-0 end-0 translate-middle badge  bg-danger p-1">
+                            </span></i>
+
+                    </div>
+                    <div class="col-auto mx-3">
+                        <div class="container position-relative p-0">
+                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle">
+                            <span class="position-absolute bottom-0 end-0 translate-middle badge  bg-success p-1">
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container-fluid d-flex flex-column flex-md-row text-light m-0 justify-content-center gap-3 pt-3"
+        id="hero">
+        <div
+            class="container col-12 col-md-5  d-flex flex-column justify-content-center align-items-center align-items-md-start m-0 gap-2">
+            <h1>Welcome Web Students!</h1>
+            <span>Hand-picked Instructor and expertly crafted<br>
+                courses, designed for the modern students and<br>entreprenuer.
+            </span>
+            <div class="row gap-1">
+                <button class="col-auto btn btn-success py-2 text-light">Browse Courses</button>
+                <button class="col-auto btn btn-info py-2 text-light">Are You Instructor?</button>
+            </div>
+        </div>
+        <div class="container col-12 col-md-5 m-0 d-flex justify-content-center">
+            <img src="/assets/hero-img.png" alt="" id="hero-img">
+        </div>
+    </div>
+
+    <!-- Section Sub-Hero -->
+    <div class="container-fluid  p-3  row  m-0 justify-content-center">
+        <div class="container-sm row justify-content-center gap-2 gap-lg-5 ">
+            <div class="col-12 col-lg-auto">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <i class="fa-solid fa-video icon-sub-hero rounded-circle p-3"></i>
+                    </div>
+                    <div class="col-auto d-flex flex-column">
+                        <span>30,000 online courses</span>
+                        <span>Enjoy a variety of fresh topics </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-auto">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <i class="fa-solid fa-user-group icon-sub-hero rounded-circle p-3"></i>
+                    </div>
+                    <div class="col-auto d-flex flex-column">
+                        <span>Expert instruction</span>
+                        <span>Find the right instructor for you</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-auto">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <i class="fa-regular fa-clock icon-sub-hero rounded-circle p-3 "></i>
+                    </div>
+                    <div class="col-auto d-flex flex-column">
+                        <span>Lifetime access</span>
+                        <span>Learn on your schedule</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Carousel -->
+    <div class="container-fluid d-flex flex-column justify-content-center my-0 py-5 bg-light border border-grey">
+
+        <!-- First Card Section -->
+        <div class="container-fluid d-flex flex-row justify-content-center my-5">
+            <div class="col d-flex flex-column align-items-center m-0 p-0">
+
+                <div class="col-12 col-lg-8 px-3">
+                    <h3>Recommended to you</h3>
+                </div>
+                <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 justify-content-center m-2 px-2">
+
+                    <div class="col-1 flex-column d-none d-lg-flex justify-content-center arrow align-items-center">
+                        <i class="fa-solid fa-arrow-left p-3 bg-white rounded-circle border border-grey"></i>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="card">
+                            <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
+                                <p class="card-text d-flex align-items-center justify-content-between">
+                                    <span> <i class="fa-regular fa-clock"></i>
+                                        2h 40m
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-signal icon-signal"></i>
+                                        Advance
+                                    </span>
+                                </p>
+                                <p class="card-text d-flex align-items-center justify-content-evenly">
+                                    <span class="icon-star">
+
+                                        <i class="fa-solid fa-star icon-star"></i>
+                                        <i class="fa-solid fa-star icon-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke icon-star"></i>
+                                        <i class="fa-regular fa-star icon-star"></i>
+                                        <i class="fa-regular fa-star icon-star"></i>
+                                        <span class="text-feedback">
+                                            2.5
+                                        </span>
+                                    </span>
+                                    <span style="font-size: 12px;">
+                                        (1,500)
+                                    </span>
+                                </p>
+                                <p class="card-text d-flex align-items-center justify-content-start">
+                                    <span style="font-size: 18px; padding-right: 5px;">
+                                        <b>$500</b>
+                                    </span>
+                                    <span style="font-size: 15px;">
+                                        <s>$600</s>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="card-body border-top border-grey d-flex justify-content-between">
+                                <span style="font-size: 13px;">
+                                    <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle"
+                                        style="width: 30px;">
+                                    Brooklin Simmons
+                                </span>
+                                <span style="color: lightgray;">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="card">
+                            <img src="/assets/course-javascript.jpg" class="card-img-top object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                            </div>
+                            <div class="card-body border-top border-grey">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="card">
+                            <img src="/assets/course-node.jpg" class="card-img-top object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Card title</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                            </div>
+                            <div class="card-body border-top border-grey">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="card">
+                            <img src="/assets/course-laravel.jpg" class="card-img-top object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Card title</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                            </div>
+                            <div class="card-body border-top border-grey">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1 flex-column d-none d-lg-flex justify-content-center arrow align-items-center">
+                        <i class="fa-solid fa-arrow-right p-3 bg-white rounded-circle border border-grey"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Card Section -->
+        <div class="container-fluid d-flex flex-row justify-content-center my-5">
+            <div class="col d-flex flex-column align-items-center m-0 p-0">
+
+                <div class="col-12 col-lg-8 px-3">
+                    <h3>Recommended to you</h3>
+                </div>
+                <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 justify-content-center m-2 px-2">
+
+                    <div class="col-1 flex-column d-none d-lg-flex justify-content-center arrow align-items-center">
+                        <i class="fa-solid fa-arrow-left p-3 bg-white rounded-circle border border-grey"></i>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="card">
+                            <img src="/assets/course-html.jpg" class="card-img-top object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Card title</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                            </div>
+                            <div class="card-body border-top border-grey">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="card">
+                            <img src="/assets/course-javascript.jpg" class="card-img-top object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Card title</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                            </div>
+                            <div class="card-body border-top border-grey">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="card">
+                            <img src="/assets/course-node.jpg" class="card-img-top object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Card title</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                            </div>
+                            <div class="card-body border-top border-grey">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="card">
+                            <img src="/assets/course-react.jpg" class="card-img-top object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Card title</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                            </div>
+                            <div class="card-body border-top border-grey">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1 flex-column d-none d-lg-flex justify-content-center arrow align-items-center">
+                        <i class="fa-solid fa-arrow-right p-3 bg-white rounded-circle border border-grey"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Card Section -->
+        <div class="container-fluid d-flex flex-row justify-content-center my-5">
+            <div class="col d-flex flex-column align-items-center m-0 p-0">
+
+                <div class="col-12 col-lg-8 px-3">
+                    <h3>Recommended to you</h3>
+                </div>
+                <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 justify-content-center m-2 px-2">
+
+                    <div class="col-1 flex-column d-none d-lg-flex justify-content-center arrow align-items-center">
+                        <i class="fa-solid fa-arrow-left p-3 bg-white rounded-circle border border-grey"></i>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="card">
+                            <img src="/assets/course-gatsby.jpg" class="card-img-top object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Card title</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                            </div>
+                            <div class="card-body border-top border-grey">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="card">
+                            <img src="/assets/course-html.jpg" class="card-img-top object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Card title</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                            </div>
+                            <div class="card-body border-top border-grey">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="card">
+                            <img src="/assets/course-node.jpg" class="card-img-top object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Card title</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                            </div>
+                            <div class="card-body border-top border-grey">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="card">
+                            <img src="/assets/course-laravel.jpg" class="card-img-top object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Card title</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                            </div>
+                            <div class="card-body border-top border-grey">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1 flex-column d-none d-lg-flex justify-content-center arrow align-items-center">
+                        <i class="fa-solid fa-arrow-right p-3 bg-white rounded-circle border border-grey"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Test Card Carousel Slide -->
+    <div class="container text-center my-3">
+        <h2 class="font-weight-light">Bootstrap Multi Slide Carousel</h2>
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay">Slide 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay">Slide 2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay">Slide 3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="//via.placeholder.com/500x400?text=4" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay">Slide 4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay">Slide 5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay">Slide 6</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+        <h5 class="mt-2 fw-light">advances one slide at a time</h5>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
