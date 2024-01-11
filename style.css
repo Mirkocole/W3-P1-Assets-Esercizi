@@ -75,6 +75,23 @@ span.icon-star{
 margin-right: 5%;
 }
 
+.text-profile{
+    font-size: 12px;
+}
+
+/* Modifica Dropdown */
+.dropstart .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    right: 0%;
+    left: auto;
+    width: 200px;
+    margin-top: 19px;
+    margin-right: var(--bs-dropdown-spacer);
+}
+.dropstart .dropdown-toggle::before {
+    display: none;
+}
+
 /*  Codice Carosello */
 @media (max-width: 767px) {
     .carousel-inner .carousel-item-end.active,
