@@ -57,6 +57,23 @@ span.position-absolute.top-0{
     font-size: 16px;
 }
 
+span.avatar{
+    font-size: 13px;
+}
+
+span.bookmark{
+    color: lightgray;
+}
+
+img.avatar{
+    width: 100%;
+    max-width: 30px;
+    min-width: 20px;
+}
+
+span.icon-star{
+margin-right: 5%;
+}
 
 /*  Codice Carosello */
 @media (max-width: 767px) {
@@ -96,3 +113,28 @@ span.position-absolute.top-0{
   transform: translateX(0);
 }
 
+
+
+@media (max-width:576px){
+
+    div.card-body span{
+        font-size: 11px;
+    }
+
+    span.avatar{
+        font-size: 10px;
+    }
+
+    span.icon-star i{
+        font-size: 8px;
+    }
+
+    span.text-feedback, span.count-feedback{
+        font-size: 8px;
+    }
+
+    h6{
+        font-size: 12px;
+    }
+
+}
