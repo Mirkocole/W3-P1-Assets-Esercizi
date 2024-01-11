@@ -8,7 +8,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b68de36aab.js" crossorigin="anonymous"></script>
-    
+
     <title>Mockup WebSite</title>
 </head>
 
@@ -20,11 +20,7 @@
             <a class="navbar-brand" href="#">
                 <img src="/assets/logo.svg" alt="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            
             <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
@@ -52,7 +48,12 @@
                         </a>
                     </li>
                 </ul>
-                <div class="d-flex me-2" role="search">
+
+            </div>
+
+            <div class="col-auto d-flex position-absolute top-0 end-0 pt-1 pe-2">
+
+                <div class="d-flex me-2">
                     <div class="col-auto bg-light rounded-circle p-0 d-flex align-items-center">
                         <i class="fa-regular fa-bell fa-lg bg-light p-3 rounded-circle position-relative">
                             <span class="position-absolute top-0 end-0 translate-middle badge  bg-danger p-1">
@@ -68,7 +69,13 @@
 
                     </div>
                 </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
+
         </div>
     </nav>
 
@@ -130,335 +137,53 @@
         </div>
     </div>
 
-    <!-- Card Carousel -->
-    <!-- <div class="container-fluid d-flex flex-column justify-content-center my-0 py-5 bg-light border border-grey">
 
-       
-        <div class="container-fluid d-flex flex-row justify-content-center my-5">
-            <div class="col d-flex flex-column align-items-center m-0 p-0">
 
-                <div class="col-12 col-lg-8 px-3">
-                    <h3>Recommended to you</h3>
-                </div>
-                <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 justify-content-center m-2 px-2">
-
-                    <div class="col-1 flex-column d-none d-lg-flex justify-content-center arrow align-items-center">
-                        <i class="fa-solid fa-arrow-left p-3 bg-white rounded-circle border border-grey"></i>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2">
-                        <div class="card">
-                            <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                <p class="card-text d-flex align-items-center justify-content-between">
-                                    <span> <i class="fa-regular fa-clock"></i>
-                                        2h 40m
-                                    </span>
-                                    <span>
-                                        <i class="fa-solid fa-signal icon-signal"></i>
-                                        Advance
-                                    </span>
-                                </p>
-                                <p class="card-text d-flex align-items-center justify-content-evenly">
-                                    <span class="icon-star">
-
-                                        <i class="fa-solid fa-star icon-star"></i>
-                                        <i class="fa-solid fa-star icon-star"></i>
-                                        <i class="fa-regular fa-star-half-stroke icon-star"></i>
-                                        <i class="fa-regular fa-star icon-star"></i>
-                                        <i class="fa-regular fa-star icon-star"></i>
-                                        <span class="text-feedback">
-                                            2.5
-                                        </span>
-                                    </span>
-                                    <span style="font-size: 12px;">
-                                        (1,500)
-                                    </span>
-                                </p>
-                                <p class="card-text d-flex align-items-center justify-content-start">
-                                    <span style="font-size: 18px; padding-right: 5px;">
-                                        <b>$500</b>
-                                    </span>
-                                    <span style="font-size: 15px;">
-                                        <s>$600</s>
-                                    </span>
-                                </p>
-                            </div>
-                            <div class="card-body border-top border-grey d-flex justify-content-between">
-                                <span style="font-size: 13px;">
-                                    <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle"
-                                        style="width: 30px;">
-                                    Brooklin Simmons
-                                </span>
-                                <span style="color: lightgray;">
-                                    <i class="fa-regular fa-bookmark"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2">
-                        <div class="card">
-                            <img src="/assets/course-javascript.jpg" class="card-img-top object-fit-cover" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                            </div>
-                            <div class="card-body border-top border-grey">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2">
-                        <div class="card">
-                            <img src="/assets/course-node.jpg" class="card-img-top object-fit-cover" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Card title</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                            </div>
-                            <div class="card-body border-top border-grey">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2">
-                        <div class="card">
-                            <img src="/assets/course-laravel.jpg" class="card-img-top object-fit-cover" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Card title</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                            </div>
-                            <div class="card-body border-top border-grey">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-1 flex-column d-none d-lg-flex justify-content-center arrow align-items-center">
-                        <i class="fa-solid fa-arrow-right p-3 bg-white rounded-circle border border-grey"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-       
-        <div class="container-fluid d-flex flex-row justify-content-center my-5">
-            <div class="col d-flex flex-column align-items-center m-0 p-0">
-
-                <div class="col-12 col-lg-8 px-3">
-                    <h3>Recommended to you</h3>
-                </div>
-                <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 justify-content-center m-2 px-2">
-
-                    <div class="col-1 flex-column d-none d-lg-flex justify-content-center arrow align-items-center">
-                        <i class="fa-solid fa-arrow-left p-3 bg-white rounded-circle border border-grey"></i>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2">
-                        <div class="card">
-                            <img src="/assets/course-html.jpg" class="card-img-top object-fit-cover" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Card title</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                            </div>
-                            <div class="card-body border-top border-grey">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2">
-                        <div class="card">
-                            <img src="/assets/course-javascript.jpg" class="card-img-top object-fit-cover" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Card title</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                            </div>
-                            <div class="card-body border-top border-grey">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2">
-                        <div class="card">
-                            <img src="/assets/course-node.jpg" class="card-img-top object-fit-cover" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Card title</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                            </div>
-                            <div class="card-body border-top border-grey">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2">
-                        <div class="card">
-                            <img src="/assets/course-react.jpg" class="card-img-top object-fit-cover" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Card title</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                            </div>
-                            <div class="card-body border-top border-grey">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-1 flex-column d-none d-lg-flex justify-content-center arrow align-items-center">
-                        <i class="fa-solid fa-arrow-right p-3 bg-white rounded-circle border border-grey"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="container-fluid d-flex flex-row justify-content-center my-5">
-            <div class="col d-flex flex-column align-items-center m-0 p-0">
-
-                <div class="col-12 col-lg-8 px-3">
-                    <h3>Recommended to you</h3>
-                </div>
-                <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 justify-content-center m-2 px-2">
-
-                    <div class="col-1 flex-column d-none d-lg-flex justify-content-center arrow align-items-center">
-                        <i class="fa-solid fa-arrow-left p-3 bg-white rounded-circle border border-grey"></i>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2">
-                        <div class="card">
-                            <img src="/assets/course-gatsby.jpg" class="card-img-top object-fit-cover" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Card title</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                            </div>
-                            <div class="card-body border-top border-grey">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2">
-                        <div class="card">
-                            <img src="/assets/course-html.jpg" class="card-img-top object-fit-cover" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Card title</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                            </div>
-                            <div class="card-body border-top border-grey">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2">
-                        <div class="card">
-                            <img src="/assets/course-node.jpg" class="card-img-top object-fit-cover" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Card title</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                            </div>
-                            <div class="card-body border-top border-grey">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2">
-                        <div class="card">
-                            <img src="/assets/course-laravel.jpg" class="card-img-top object-fit-cover" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Card title</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                            </div>
-                            <div class="card-body border-top border-grey">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-1 flex-column d-none d-lg-flex justify-content-center arrow align-items-center">
-                        <i class="fa-solid fa-arrow-right p-3 bg-white rounded-circle border border-grey"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div> -->
-
-    <!-- Test Card Carousel Slide -->
+    <!-- Card Carousel Slide -->
     <div class="container-fluid bg-light py-5">
 
-        <div class="container text-center my-5">
-        
-            <div class="row mx-auto my-auto justify-content-center">
-                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Slider 1 -->
+        <div class="container text-center my-5 position-relative container-slide">
+
+            <!-- Titolo Slide -->
+            <div class="col-10 mx-auto my-4">
+                <h3 class="text-start ">Recommended to you</h3>
+            </div>
+            <!-- Carousel -->
+            <div class="col-10 mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel slide">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <div class="col-6 col-md-3">
                                 <div class="card">
-                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover"
+                                        alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                        <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
+                                        <h6 class="card-title text-start text-start">GraphQL: introduction to grapgQL
+                                            for beginners</h6>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                2h 40m
+                                            </span>
+                                            <span class="me-2">
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Advance
+                                            </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-evenly">
                                             <span class="icon-star">
-                                                
+
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star-half-stroke icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
+                                                <span class="text-feedback">
+                                                    2.5
+                                                </span>
                                             </span>
                                             <span style="font-size: 12px;">
-                                                 (1,500)
+                                                (1,500)
                                             </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-start">
@@ -472,7 +197,8 @@
                                     </div>
                                     <div class="card-body border-top border-grey d-flex justify-content-between">
                                         <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
+                                            <img src="/assets/avatar-5.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
                                             Brooklin Simmons
                                         </span>
                                         <span style="color: lightgray;">
@@ -486,47 +212,50 @@
                             <div class="col-6 col-md-3">
                                 <div class="card">
                                     <div class="card">
-                                        <img src="/assets/course-javascript.jpg" class="card-img-top object-fit-cover" alt="...">
+                                        <img src="/assets/course-javascript.jpg" class="card-img-top object-fit-cover"
+                                            alt="...">
                                         <div class="card-body">
-                                            <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                            <p class="card-text d-flex align-items-center justify-content-between">
-                                               <span> <i class="fa-regular fa-clock"></i> 
-                                                2h 40m 
-                                            </span>
-                                            <span>
-                                                <i class="fa-solid fa-signal icon-signal"></i> 
-                                                Advance
-                                            </span>
+                                            <h6 class="card-title text-start">A Complete Beginner's Guide to Javascript
+                                            </h6>
+                                            <p class="card-text d-flex align-items-center justify-content-start">
+                                                <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                    4h 10m
+                                                </span>
+                                                <span>
+                                                    <i class="fa-solid fa-signal icon-signal"></i>
+                                                    Advance
+                                                </span>
                                             </p>
                                             <p class="card-text d-flex align-items-center justify-content-evenly">
                                                 <span class="icon-star">
-                                                    
+
+                                                    <i class="fa-solid fa-star icon-star"></i>
                                                     <i class="fa-solid fa-star icon-star"></i>
                                                     <i class="fa-solid fa-star icon-star"></i>
                                                     <i class="fa-regular fa-star-half-stroke icon-star"></i>
                                                     <i class="fa-regular fa-star icon-star"></i>
-                                                    <i class="fa-regular fa-star icon-star"></i>
-                                                     <span class="text-feedback">
-                                                         2.5
-                                                     </span>
+                                                    <span class="text-feedback">
+                                                        3.5
+                                                    </span>
                                                 </span>
                                                 <span style="font-size: 12px;">
-                                                     (1,500)
+                                                    (7,500)
                                                 </span>
                                             </p>
                                             <p class="card-text d-flex align-items-center justify-content-start">
                                                 <span style="font-size: 18px; padding-right: 5px;">
-                                                    <b>$500</b>
+                                                    <b>$700</b>
                                                 </span>
                                                 <span style="font-size: 15px;">
-                                                    <s>$600</s>
+                                                    <s>$850</s>
                                                 </span>
                                             </p>
                                         </div>
                                         <div class="card-body border-top border-grey d-flex justify-content-between">
                                             <span style="font-size: 13px;">
-                                                <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                                Brooklin Simmons
+                                                <img src="/assets/avatar-1.jpg" alt="" id="avatar"
+                                                    class="rounded-circle" style="width: 30px;">
+                                                Jenny Wilson
                                             </span>
                                             <span style="color: lightgray;">
                                                 <i class="fa-regular fa-bookmark"></i>
@@ -541,45 +270,47 @@
                                 <div class="card">
                                     <img src="/assets/course-node.jpg" class="card-img-top object-fit-cover" alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                        <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
+                                        <h6 class="card-title text-start">Beginning Node.js, Express e MongoDB
+                                            Development</h6>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                2h 00m
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Intermediate
+                                            </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-evenly">
                                             <span class="icon-star">
-                                                
+
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star-half-stroke icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
+                                                <span class="text-feedback">
+                                                    4.0
+                                                </span>
                                             </span>
                                             <span style="font-size: 12px;">
-                                                 (1,500)
+                                                (15,700)
                                             </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-start">
                                             <span style="font-size: 18px; padding-right: 5px;">
-                                                <b>$500</b>
+                                                <b>$800</b>
                                             </span>
                                             <span style="font-size: 15px;">
-                                                <s>$600</s>
+                                                <s>$950</s>
                                             </span>
                                         </p>
                                     </div>
                                     <div class="card-body border-top border-grey d-flex justify-content-between">
                                         <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                            Brooklin Simmons
+                                            <img src="/assets/avatar-3.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
+                                            Sina Ray
                                         </span>
                                         <span style="color: lightgray;">
                                             <i class="fa-regular fa-bookmark"></i>
@@ -591,47 +322,50 @@
                         <div class="carousel-item">
                             <div class="col-6 col-md-3">
                                 <div class="card">
-                                    <img src="/assets/course-laravel.jpg" class="card-img-top object-fit-cover" alt="...">
+                                    <img src="/assets/course-laravel.jpg" class="card-img-top object-fit-cover"
+                                        alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                        <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
+                                        <h6 class="card-title text-start">Laravel: The Ultimate Beginner's Guide to
+                                            Learn</h6>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                1h 00m
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Beginner
+                                            </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-evenly">
                                             <span class="icon-star">
-                                                
+
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star-half-stroke icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
+                                                <span class="text-feedback">
+                                                    4.5
+                                                </span>
                                             </span>
                                             <span style="font-size: 12px;">
-                                                 (1,500)
+                                                (2,500)
                                             </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-start">
                                             <span style="font-size: 18px; padding-right: 5px;">
-                                                <b>$500</b>
+                                                <b>$170</b>
                                             </span>
                                             <span style="font-size: 15px;">
-                                                <s>$600</s>
+                                                <s>$220</s>
                                             </span>
                                         </p>
                                     </div>
                                     <div class="card-body border-top border-grey d-flex justify-content-between">
                                         <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                            Brooklin Simmons
+                                            <img src="/assets/avatar-7.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
+                                            Sobo Rikhan
                                         </span>
                                         <span style="color: lightgray;">
                                             <i class="fa-regular fa-bookmark"></i>
@@ -643,47 +377,49 @@
                         <div class="carousel-item">
                             <div class="col-6 col-md-3">
                                 <div class="card">
-                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                                    <img src="/assets/course-gatsby.jpg" class="card-img-top object-fit-cover"
+                                        alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                        <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
+                                        <h6 class="card-title text-start">Revolutionize how you build the web</h6>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                1h 46m
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Intermediate
+                                            </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-evenly">
                                             <span class="icon-star">
-                                                
+
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star-half-stroke icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
+                                                <i class="fa-regular fa-star icon-star"></i>
+                                                <span class="text-feedback">
+                                                    2.0
+                                                </span>
                                             </span>
                                             <span style="font-size: 12px;">
-                                                 (1,500)
+                                                (16,500)
                                             </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-start">
                                             <span style="font-size: 18px; padding-right: 5px;">
-                                                <b>$500</b>
+                                                <b>$800</b>
                                             </span>
                                             <span style="font-size: 15px;">
-                                                <s>$600</s>
+                                                <s>$850</s>
                                             </span>
                                         </p>
                                     </div>
                                     <div class="card-body border-top border-grey d-flex justify-content-between">
                                         <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                            Brooklin Simmons
+                                            <img src="/assets/avatar-6.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
+                                            Jenny Wilson
                                         </span>
                                         <span style="color: lightgray;">
                                             <i class="fa-regular fa-bookmark"></i>
@@ -695,47 +431,48 @@
                         <div class="carousel-item">
                             <div class="col-6 col-md-3">
                                 <div class="card">
-                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                                    <img src="/assets/course-react.jpg" class="card-img-top object-fit-cover" alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
+                                        <h6 class="card-title text-start">How to easily create a website with React</h6>
                                         <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
+                                            <span> <i class="fa-regular fa-clock"></i>
+                                                3h 55m
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Advance
+                                            </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-evenly">
                                             <span class="icon-star">
-                                                
+
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star-half-stroke icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
+                                                <span class="text-feedback">
+                                                    4.5
+                                                </span>
                                             </span>
                                             <span style="font-size: 12px;">
-                                                 (1,500)
+                                                (1,500)
                                             </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-start">
                                             <span style="font-size: 18px; padding-right: 5px;">
-                                                <b>$500</b>
+                                                <b>$600</b>
                                             </span>
                                             <span style="font-size: 15px;">
-                                                <s>$600</s>
+                                                <s>$750</s>
                                             </span>
                                         </p>
                                     </div>
                                     <div class="card-body border-top border-grey d-flex justify-content-between">
                                         <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                            Brooklin Simmons
+                                            <img src="/assets/avatar-2.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
+                                            April Noms
                                         </span>
                                         <span style="color: lightgray;">
                                             <i class="fa-regular fa-bookmark"></i>
@@ -745,70 +482,81 @@
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
                 </div>
             </div>
-            
+            <a class="carousel-control-prev bg-transparent w-aut col-1 d-none d-md-flex justify-content-start"
+                href="#recipeCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-left p-3 bg-white rounded-circle border border-grey text-dark"></i>
+                </span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut col-1 d-none d-md-flex justify-content-end"
+                href="#recipeCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-right p-3 bg-white rounded-circle border border-grey text-dark"></i>
+                </span>
+            </a>
+
         </div>
-    
-    
-    
-        <div class="container text-center my-5">
-            
-            <div class="row mx-auto my-auto justify-content-center">
-                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+
+
+
+        <!-- Slider 2 -->
+        <div class="container text-center my-5 position-relative container-slide">
+            <!-- Titolo Slide -->
+            <div class="col-10 mx-auto my-4">
+                <h3 class="text-start ">Most Popular</h3>
+            </div>
+            <!-- Carousel -->
+            <div class="col-10 mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel2" class="carousel slide">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <div class="col-6 col-md-3">
                                 <div class="card">
-                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                                    <img src="/assets/course-html.jpg" class="card-img-top object-fit-cover" alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                        <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
+                                        <h6 class="card-title text-start">HTML Full Course - Build a Website Tutorial
+                                        </h6>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                3h 16m
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Biginner
+                                            </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-evenly">
                                             <span class="icon-star">
-                                                
+
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star-half-stroke icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
+                                                <span class="text-feedback">
+                                                    3.0
+                                                </span>
                                             </span>
                                             <span style="font-size: 12px;">
-                                                 (1,500)
+                                                (1,600)
                                             </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-start">
                                             <span style="font-size: 18px; padding-right: 5px;">
-                                                <b>$500</b>
+                                                <b>$550</b>
                                             </span>
                                             <span style="font-size: 15px;">
-                                                <s>$600</s>
+                                                <s>$700</s>
                                             </span>
                                         </p>
                                     </div>
                                     <div class="card-body border-top border-grey d-flex justify-content-between">
                                         <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                            Brooklin Simmons
+                                            <img src="/assets/avatar-4.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
+                                            Milston Wilson
                                         </span>
                                         <span style="color: lightgray;">
                                             <i class="fa-regular fa-bookmark"></i>
@@ -821,47 +569,50 @@
                             <div class="col-6 col-md-3">
                                 <div class="card">
                                     <div class="card">
-                                        <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                                        <img src="/assets/course-javascript.jpg" class="card-img-top object-fit-cover"
+                                            alt="...">
                                         <div class="card-body">
-                                            <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                            <p class="card-text d-flex align-items-center justify-content-between">
-                                               <span> <i class="fa-regular fa-clock"></i> 
-                                                2h 40m 
-                                            </span>
-                                            <span>
-                                                <i class="fa-solid fa-signal icon-signal"></i> 
-                                                Advance
-                                            </span>
+                                            <h6 class="card-title text-start">A Complete Beginner's Guide to Javascript
+                                            </h6>
+                                            <p class="card-text d-flex align-items-center justify-content-start">
+                                                <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                    4h 10m
+                                                </span>
+                                                <span>
+                                                    <i class="fa-solid fa-signal icon-signal"></i>
+                                                    Advance
+                                                </span>
                                             </p>
                                             <p class="card-text d-flex align-items-center justify-content-evenly">
                                                 <span class="icon-star">
-                                                    
+
+                                                    <i class="fa-solid fa-star icon-star"></i>
                                                     <i class="fa-solid fa-star icon-star"></i>
                                                     <i class="fa-solid fa-star icon-star"></i>
                                                     <i class="fa-regular fa-star-half-stroke icon-star"></i>
                                                     <i class="fa-regular fa-star icon-star"></i>
-                                                    <i class="fa-regular fa-star icon-star"></i>
-                                                     <span class="text-feedback">
-                                                         2.5
-                                                     </span>
+                                                    <span class="text-feedback">
+                                                        3.5
+                                                    </span>
                                                 </span>
                                                 <span style="font-size: 12px;">
-                                                     (1,500)
+                                                    (7,500)
                                                 </span>
                                             </p>
                                             <p class="card-text d-flex align-items-center justify-content-start">
                                                 <span style="font-size: 18px; padding-right: 5px;">
-                                                    <b>$500</b>
+                                                    <b>$700</b>
                                                 </span>
                                                 <span style="font-size: 15px;">
-                                                    <s>$600</s>
+                                                    <s>$850</s>
                                                 </span>
                                             </p>
                                         </div>
                                         <div class="card-body border-top border-grey d-flex justify-content-between">
                                             <span style="font-size: 13px;">
-                                                <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                                Brooklin Simmons
+                                                <img src="/assets/avatar-1.jpg" alt="" id="avatar"
+                                                    class="rounded-circle" style="width: 30px;">
+                                                Jenny Wilson
                                             </span>
                                             <span style="color: lightgray;">
                                                 <i class="fa-regular fa-bookmark"></i>
@@ -874,32 +625,141 @@
                         <div class="carousel-item">
                             <div class="col-6 col-md-3">
                                 <div class="card">
-                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                                    <img src="/assets/course-node.jpg" class="card-img-top object-fit-cover" alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                        <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
+                                        <h6 class="card-title text-start">Beginning Node.js, Express e MongoDB
+                                            Development</h6>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                2h 00m
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Intermediate
+                                            </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-evenly">
                                             <span class="icon-star">
-                                                
+
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-regular fa-star icon-star"></i>
+                                                <span class="text-feedback">
+                                                    4.0
+                                                </span>
+                                            </span>
+                                            <span style="font-size: 12px;">
+                                                (15,700)
+                                            </span>
+                                        </p>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span style="font-size: 18px; padding-right: 5px;">
+                                                <b>$800</b>
+                                            </span>
+                                            <span style="font-size: 15px;">
+                                                <s>$950</s>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="card-body border-top border-grey d-flex justify-content-between">
+                                        <span style="font-size: 13px;">
+                                            <img src="/assets/avatar-3.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
+                                            Sina Ray
+                                        </span>
+                                        <span style="color: lightgray;">
+                                            <i class="fa-regular fa-bookmark"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="/assets/course-react.jpg" class="card-img-top object-fit-cover" alt="...">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-start">How to easily create a website with React</h6>
+                                        <p class="card-text d-flex align-items-center justify-content-between">
+                                            <span> <i class="fa-regular fa-clock"></i>
+                                                3h 55m
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Advance
+                                            </span>
+                                        </p>
+                                        <p class="card-text d-flex align-items-center justify-content-evenly">
+                                            <span class="icon-star">
+
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke icon-star"></i>
+                                                <span class="text-feedback">
+                                                    4.5
+                                                </span>
+                                            </span>
+                                            <span style="font-size: 12px;">
+                                                (1,500)
+                                            </span>
+                                        </p>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span style="font-size: 18px; padding-right: 5px;">
+                                                <b>$600</b>
+                                            </span>
+                                            <span style="font-size: 15px;">
+                                                <s>$750</s>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="card-body border-top border-grey d-flex justify-content-between">
+                                        <span style="font-size: 13px;">
+                                            <img src="/assets/avatar-2.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
+                                            April Noms
+                                        </span>
+                                        <span style="color: lightgray;">
+                                            <i class="fa-regular fa-bookmark"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-start text-start">GraphQL: introduction to grapgQL
+                                            for beginners</h6>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                2h 40m
+                                            </span>
+                                            <span class="me-2">
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Advance
+                                            </span>
+                                        </p>
+                                        <p class="card-text d-flex align-items-center justify-content-evenly">
+                                            <span class="icon-star">
+
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star-half-stroke icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
+                                                <span class="text-feedback">
+                                                    2.5
+                                                </span>
                                             </span>
                                             <span style="font-size: 12px;">
-                                                 (1,500)
+                                                (1,500)
                                             </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-start">
@@ -913,7 +773,8 @@
                                     </div>
                                     <div class="card-body border-top border-grey d-flex justify-content-between">
                                         <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
+                                            <img src="/assets/avatar-5.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
                                             Brooklin Simmons
                                         </span>
                                         <span style="color: lightgray;">
@@ -926,151 +787,49 @@
                         <div class="carousel-item">
                             <div class="col-6 col-md-3">
                                 <div class="card">
-                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                                    <img src="/assets/course-gatsby.jpg" class="card-img-top object-fit-cover"
+                                        alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                        <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
+                                        <h6 class="card-title text-start">Revolutionize how you build the web</h6>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                1h 46m
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Intermediate
+                                            </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-evenly">
                                             <span class="icon-star">
-                                                
+
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star-half-stroke icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
+                                                <i class="fa-regular fa-star icon-star"></i>
+                                                <span class="text-feedback">
+                                                    2.0
+                                                </span>
                                             </span>
                                             <span style="font-size: 12px;">
-                                                 (1,500)
+                                                (16,500)
                                             </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-start">
                                             <span style="font-size: 18px; padding-right: 5px;">
-                                                <b>$500</b>
+                                                <b>$800</b>
                                             </span>
                                             <span style="font-size: 15px;">
-                                                <s>$600</s>
+                                                <s>$850</s>
                                             </span>
                                         </p>
                                     </div>
                                     <div class="card-body border-top border-grey d-flex justify-content-between">
                                         <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                            Brooklin Simmons
-                                        </span>
-                                        <span style="color: lightgray;">
-                                            <i class="fa-regular fa-bookmark"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-6 col-md-3">
-                                <div class="card">
-                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
-                                    <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                        <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
-                                        </p>
-                                        <p class="card-text d-flex align-items-center justify-content-evenly">
-                                            <span class="icon-star">
-                                                
-                                                <i class="fa-solid fa-star icon-star"></i>
-                                                <i class="fa-solid fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star-half-stroke icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
-                                            </span>
-                                            <span style="font-size: 12px;">
-                                                 (1,500)
-                                            </span>
-                                        </p>
-                                        <p class="card-text d-flex align-items-center justify-content-start">
-                                            <span style="font-size: 18px; padding-right: 5px;">
-                                                <b>$500</b>
-                                            </span>
-                                            <span style="font-size: 15px;">
-                                                <s>$600</s>
-                                            </span>
-                                        </p>
-                                    </div>
-                                    <div class="card-body border-top border-grey d-flex justify-content-between">
-                                        <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                            Brooklin Simmons
-                                        </span>
-                                        <span style="color: lightgray;">
-                                            <i class="fa-regular fa-bookmark"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-6 col-md-3">
-                                <div class="card">
-                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
-                                    <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                        <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
-                                        </p>
-                                        <p class="card-text d-flex align-items-center justify-content-evenly">
-                                            <span class="icon-star">
-                                                
-                                                <i class="fa-solid fa-star icon-star"></i>
-                                                <i class="fa-solid fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star-half-stroke icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
-                                            </span>
-                                            <span style="font-size: 12px;">
-                                                 (1,500)
-                                            </span>
-                                        </p>
-                                        <p class="card-text d-flex align-items-center justify-content-start">
-                                            <span style="font-size: 18px; padding-right: 5px;">
-                                                <b>$500</b>
-                                            </span>
-                                            <span style="font-size: 15px;">
-                                                <s>$600</s>
-                                            </span>
-                                        </p>
-                                    </div>
-                                    <div class="card-body border-top border-grey d-flex justify-content-between">
-                                        <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                            Brooklin Simmons
+                                            <img src="/assets/avatar-6.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
+                                            Jenny Wilson
                                         </span>
                                         <span style="color: lightgray;">
                                             <i class="fa-regular fa-bookmark"></i>
@@ -1080,69 +839,80 @@
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
                 </div>
             </div>
-            
+            <a class="carousel-control-prev bg-transparent w-aut col-1 d-none d-md-flex justify-content-start"
+                href="#recipeCarousel2" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-left p-3 bg-white rounded-circle border border-grey text-dark"></i>
+                </span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut col-1 d-none d-md-flex justify-content-end"
+                href="#recipeCarousel2" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-right p-3 bg-white rounded-circle border border-grey text-dark"></i>
+                </span>
+            </a>
+
         </div>
 
 
-        <div class="container text-center my-5">
-            
-            <div class="row mx-auto my-auto justify-content-center">
-                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Slider 3 -->
+        <div class="container text-center my-5 position-relative container-slide">
+            <!-- Titolo Slide -->
+            <div class="col-10 mx-auto my-4">
+                <h3 class="text-start ">Trending</h3>
+            </div>
+            <!-- Carousel -->
+            <div class="col-10 mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel3" class="carousel slide">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <div class="col-6 col-md-3">
                                 <div class="card">
-                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                                    <img src="/assets/course-gatsby.jpg" class="card-img-top object-fit-cover"
+                                        alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                        <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
+                                        <h6 class="card-title text-start">Revolutionize how you build the web</h6>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                1h 46m
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Intermediate
+                                            </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-evenly">
                                             <span class="icon-star">
-                                                
+
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star-half-stroke icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
+                                                <i class="fa-regular fa-star icon-star"></i>
+                                                <span class="text-feedback">
+                                                    2.0
+                                                </span>
                                             </span>
                                             <span style="font-size: 12px;">
-                                                 (1,500)
+                                                (16,500)
                                             </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-start">
                                             <span style="font-size: 18px; padding-right: 5px;">
-                                                <b>$500</b>
+                                                <b>$800</b>
                                             </span>
                                             <span style="font-size: 15px;">
-                                                <s>$600</s>
+                                                <s>$850</s>
                                             </span>
                                         </p>
                                     </div>
                                     <div class="card-body border-top border-grey d-flex justify-content-between">
                                         <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                            Brooklin Simmons
+                                            <img src="/assets/avatar-6.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
+                                            Jenny Wilson
                                         </span>
                                         <span style="color: lightgray;">
                                             <i class="fa-regular fa-bookmark"></i>
@@ -1155,47 +925,50 @@
                             <div class="col-6 col-md-3">
                                 <div class="card">
                                     <div class="card">
-                                        <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                                        <img src="/assets/course-javascript.jpg" class="card-img-top object-fit-cover"
+                                            alt="...">
                                         <div class="card-body">
-                                            <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                            <p class="card-text d-flex align-items-center justify-content-between">
-                                               <span> <i class="fa-regular fa-clock"></i> 
-                                                2h 40m 
-                                            </span>
-                                            <span>
-                                                <i class="fa-solid fa-signal icon-signal"></i> 
-                                                Advance
-                                            </span>
+                                            <h6 class="card-title text-start">A Complete Beginner's Guide to Javascript
+                                            </h6>
+                                            <p class="card-text d-flex align-items-center justify-content-start">
+                                                <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                    4h 10m
+                                                </span>
+                                                <span>
+                                                    <i class="fa-solid fa-signal icon-signal"></i>
+                                                    Advance
+                                                </span>
                                             </p>
                                             <p class="card-text d-flex align-items-center justify-content-evenly">
                                                 <span class="icon-star">
-                                                    
+
+                                                    <i class="fa-solid fa-star icon-star"></i>
                                                     <i class="fa-solid fa-star icon-star"></i>
                                                     <i class="fa-solid fa-star icon-star"></i>
                                                     <i class="fa-regular fa-star-half-stroke icon-star"></i>
                                                     <i class="fa-regular fa-star icon-star"></i>
-                                                    <i class="fa-regular fa-star icon-star"></i>
-                                                     <span class="text-feedback">
-                                                         2.5
-                                                     </span>
+                                                    <span class="text-feedback">
+                                                        3.5
+                                                    </span>
                                                 </span>
                                                 <span style="font-size: 12px;">
-                                                     (1,500)
+                                                    (7,500)
                                                 </span>
                                             </p>
                                             <p class="card-text d-flex align-items-center justify-content-start">
                                                 <span style="font-size: 18px; padding-right: 5px;">
-                                                    <b>$500</b>
+                                                    <b>$700</b>
                                                 </span>
                                                 <span style="font-size: 15px;">
-                                                    <s>$600</s>
+                                                    <s>$850</s>
                                                 </span>
                                             </p>
                                         </div>
                                         <div class="card-body border-top border-grey d-flex justify-content-between">
                                             <span style="font-size: 13px;">
-                                                <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                                Brooklin Simmons
+                                                <img src="/assets/avatar-1.jpg" alt="" id="avatar"
+                                                    class="rounded-circle" style="width: 30px;">
+                                                Jenny Wilson
                                             </span>
                                             <span style="color: lightgray;">
                                                 <i class="fa-regular fa-bookmark"></i>
@@ -1208,47 +981,49 @@
                         <div class="carousel-item">
                             <div class="col-6 col-md-3">
                                 <div class="card">
-                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                                    <img src="/assets/course-node.jpg" class="card-img-top object-fit-cover" alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                        <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
+                                        <h6 class="card-title text-start">Beginning Node.js, Express e MongoDB
+                                            Development</h6>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                2h 00m
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Intermediate
+                                            </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-evenly">
                                             <span class="icon-star">
-                                                
+
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star-half-stroke icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
+                                                <span class="text-feedback">
+                                                    4.0
+                                                </span>
                                             </span>
                                             <span style="font-size: 12px;">
-                                                 (1,500)
+                                                (15,700)
                                             </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-start">
                                             <span style="font-size: 18px; padding-right: 5px;">
-                                                <b>$500</b>
+                                                <b>$800</b>
                                             </span>
                                             <span style="font-size: 15px;">
-                                                <s>$600</s>
+                                                <s>$950</s>
                                             </span>
                                         </p>
                                     </div>
                                     <div class="card-body border-top border-grey d-flex justify-content-between">
                                         <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                            Brooklin Simmons
+                                            <img src="/assets/avatar-3.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
+                                            Sina Ray
                                         </span>
                                         <span style="color: lightgray;">
                                             <i class="fa-regular fa-bookmark"></i>
@@ -1260,47 +1035,50 @@
                         <div class="carousel-item">
                             <div class="col-6 col-md-3">
                                 <div class="card">
-                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                                    <img src="/assets/course-laravel.jpg" class="card-img-top object-fit-cover"
+                                        alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                        <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
+                                        <h6 class="card-title text-start">Laravel: The Ultimate Beginner's Guide to
+                                            Learn</h6>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                1h 00m
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Beginner
+                                            </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-evenly">
                                             <span class="icon-star">
-                                                
+
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star-half-stroke icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
+                                                <span class="text-feedback">
+                                                    4.5
+                                                </span>
                                             </span>
                                             <span style="font-size: 12px;">
-                                                 (1,500)
+                                                (2,500)
                                             </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-start">
                                             <span style="font-size: 18px; padding-right: 5px;">
-                                                <b>$500</b>
+                                                <b>$170</b>
                                             </span>
                                             <span style="font-size: 15px;">
-                                                <s>$600</s>
+                                                <s>$220</s>
                                             </span>
                                         </p>
                                     </div>
                                     <div class="card-body border-top border-grey d-flex justify-content-between">
                                         <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                            Brooklin Simmons
+                                            <img src="/assets/avatar-7.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
+                                            Sobo Rikhan
                                         </span>
                                         <span style="color: lightgray;">
                                             <i class="fa-regular fa-bookmark"></i>
@@ -1312,47 +1090,48 @@
                         <div class="carousel-item">
                             <div class="col-6 col-md-3">
                                 <div class="card">
-                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                                    <img src="/assets/course-react.jpg" class="card-img-top object-fit-cover" alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
+                                        <h6 class="card-title text-start">How to easily create a website with React</h6>
                                         <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
+                                            <span> <i class="fa-regular fa-clock"></i>
+                                                3h 55m
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Advance
+                                            </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-evenly">
                                             <span class="icon-star">
-                                                
+
+                                                <i class="fa-solid fa-star icon-star"></i>
+                                                <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star-half-stroke icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
+                                                <span class="text-feedback">
+                                                    4.5
+                                                </span>
                                             </span>
                                             <span style="font-size: 12px;">
-                                                 (1,500)
+                                                (1,500)
                                             </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-start">
                                             <span style="font-size: 18px; padding-right: 5px;">
-                                                <b>$500</b>
+                                                <b>$600</b>
                                             </span>
                                             <span style="font-size: 15px;">
-                                                <s>$600</s>
+                                                <s>$750</s>
                                             </span>
                                         </p>
                                     </div>
                                     <div class="card-body border-top border-grey d-flex justify-content-between">
                                         <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
-                                            Brooklin Simmons
+                                            <img src="/assets/avatar-2.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
+                                            April Noms
                                         </span>
                                         <span style="color: lightgray;">
                                             <i class="fa-regular fa-bookmark"></i>
@@ -1364,32 +1143,34 @@
                         <div class="carousel-item">
                             <div class="col-6 col-md-3">
                                 <div class="card">
-                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="...">
+                                    <img src="/assets/course-graphql.jpg" class="card-img-top object-fit-cover"
+                                        alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title">GraphQL: introduction to grapgQL for beginners</h6>
-                                        <p class="card-text d-flex align-items-center justify-content-between">
-                                           <span> <i class="fa-regular fa-clock"></i> 
-                                            2h 40m 
-                                        </span>
-                                        <span>
-                                            <i class="fa-solid fa-signal icon-signal"></i> 
-                                            Advance
-                                        </span>
+                                        <h6 class="card-title text-start text-start">GraphQL: introduction to grapgQL
+                                            for beginners</h6>
+                                        <p class="card-text d-flex align-items-center justify-content-start">
+                                            <span class="me-2"> <i class="fa-regular fa-clock"></i>
+                                                2h 40m
+                                            </span>
+                                            <span class="me-2">
+                                                <i class="fa-solid fa-signal icon-signal"></i>
+                                                Advance
+                                            </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-evenly">
                                             <span class="icon-star">
-                                                
+
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-solid fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star-half-stroke icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
                                                 <i class="fa-regular fa-star icon-star"></i>
-                                                 <span class="text-feedback">
-                                                     2.5
-                                                 </span>
+                                                <span class="text-feedback">
+                                                    2.5
+                                                </span>
                                             </span>
                                             <span style="font-size: 12px;">
-                                                 (1,500)
+                                                (1,500)
                                             </span>
                                         </p>
                                         <p class="card-text d-flex align-items-center justify-content-start">
@@ -1403,7 +1184,8 @@
                                     </div>
                                     <div class="card-body border-top border-grey d-flex justify-content-between">
                                         <span style="font-size: 13px;">
-                                            <img src="/assets/avatar-1.jpg" alt="" id="avatar" class="rounded-circle" style="width: 30px;">
+                                            <img src="/assets/avatar-5.jpg" alt="" id="avatar" class="rounded-circle"
+                                                style="width: 30px;">
                                             Brooklin Simmons
                                         </span>
                                         <span style="color: lightgray;">
@@ -1414,23 +1196,38 @@
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
                 </div>
             </div>
-            
+            <a class="carousel-control-prev bg-transparent w-aut col-1 d-none d-md-flex justify-content-start"
+                href="#recipeCarousel3" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-left p-3 bg-white rounded-circle border border-grey text-dark"></i>
+                </span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut col-1 d-none d-md-flex justify-content-end"
+                href="#recipeCarousel3" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-right p-3 bg-white rounded-circle border border-grey text-dark"></i>
+                </span>
+            </a>
+
         </div>
 
     </div>
 
-    <footer class="container-fluid d-flex flex-row justify-content-center align-items-center pt-3">
-        <p>Testo di prova</p>
+    <footer
+        class="container-fluid d-flex flex-row justify-content-around align-items-center pt-3 bg-light border border-grey border-start-0 border-end-0">
+        <div class="col-md-auto">
+            <p>© 2022 Geeks. All Rights Reserved</p>
+        </div>
+        <div class="col-md-auto">
+            <ul class="list-group list-group-horizontal mb-3 p-0">
+                <li class="list-group-item text-dark bg-light py-0 m-0 border border-0"><a href="#">Privacy</a></li>
+                <li class="list-group-item text-dark bg-light py-0 m-0 border border-0"><a href="#">Terms</a></li>
+                <li class="list-group-item text-dark bg-light py-0 m-0 border border-0"><a href="#">Feedback</a></li>
+                <li class="list-group-item text-dark bg-light py-0 m-0 border border-0"><a href="#">Support</a></li>
+            </ul>
+        </div>
     </footer>
 
     <script type="text/javascript" src="index.js"></script>
