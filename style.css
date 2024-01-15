@@ -65,6 +65,10 @@ span.bookmark{
     color: lightgray;
 }
 
+span.bookmark:hover{
+    cursor: pointer;
+}
+
 img.avatar{
     width: 100%;
     max-width: 30px;
@@ -154,4 +158,49 @@ margin-right: 5%;
         font-size: 12px;
     }
 
+}
+
+
+/* Transition */
+
+div.card{
+    max-width: 244px;
+    width: 100%;
+    height: 100%;
+    max-height: 408px;
+    transform: scale(1);
+}
+
+
+@media (min-width: 768px){
+    
+    div.card:hover{
+        transition: all 0.5s linear 0.2s;
+        transform: scale(1.1);
+        z-index: 9!important;
+        position: absolute;
+    }
+    
+
+}
+
+
+i.fa-solid.fa-bookmark{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    display: none;
+    opacity: 0;
+    transition: all 0.5s linear 0s!important;
+}
+
+.animate{
+
+    display: block!important;
+    
+}
+
+i.fa-solid.fa-bookmark:hover{
+    opacity: 1!important;
+    color: red!important;
 }

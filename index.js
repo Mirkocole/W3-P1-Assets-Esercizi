@@ -19,12 +19,29 @@ items.forEach((el) => {
 
 let carousels =  document.querySelectorAll('.carousel.slide');
 
-console.log(carousels)
-
 for (const carousel of carousels) {
     let id = '#'+carousel.id;
     Carousel(id);
 }
 
+
+function Animation(){
+    let bookmarks = document.querySelectorAll('i.fa-regular.fa-bookmark');
+    
+
+    for (const book of bookmarks) {
+        book.addEventListener('mouseenter',(elem)=>{
+            elem.target.parentNode.children[0].classList.add('animate');
+            
+        });
+        book.addEventListener('mouseleave',(elem)=>{
+            // elem.target.parentNode.children[0].classList.remove('animate');
+            // elem.target.style.color = 'lightgray';
+            // elem.target.classList = "fa-regular fa-bookmark";
+        });
+    }
+}
+
+Animation();
 
 
